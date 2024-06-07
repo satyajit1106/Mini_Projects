@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.navContainer{
+    height: 50px;
+    width: 100vw;
+    background-color: #c4cdcf;
+    background-image: linear-gradient(0deg, #c4cdcf 0%, #969696 87%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 100%;
+}
+#navlist{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#navlogo{
+    font-size: 2.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    color: aliceblue;
+}
+#navbar1{
+    font-size: 1.5rem;
+    margin: 10px;
+    display: flex;
+    gap: 25px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer{
+    background-color: #c4cdcf;
+    background-image: linear-gradient(0deg, #c4cdcf 0%, #969696 87%);
+    
+}
+.contentbox{
+    width: 70%;
+    box-shadow: 1px 1px 20px black;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer p{
+    color: aliceblue;
+    min-height: 40px;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+
+}
+.rightbox img{
+    height: 300px;
+    width: 250px;
+    transition: all 0.5s linear 0s;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.leftbox h2{
+    font-size: 1.5rem;
+}
+#ingbox{
+    font-size: 1.2rem;
+}
+#recipebox{
+    font-size: 1.1rem;
+}
+.rightbox img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+.rightbox{
+    position: relative;
+    border-radius: 10px;
+}
+.rightbox .overlay{
+    position: absolute;
+    background-color: #4b48487c;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+    color: azure;
+    font-size:larger;
+    border-radius: 10px;
+}
+.rightbox .overlay:hover{
+    opacity: 1;
+    border-radius: 10px;
+}
+
